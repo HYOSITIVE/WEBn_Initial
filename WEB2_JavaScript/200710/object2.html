@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+		<h1>Object</h1>
+		<h2>Create</h2>
+		<script>
+			var pirates = {
+				"captain" : "byungjoon",
+				"vice_captain" : "honggi"
+			};
+			
+			document.write("captain : " + pirates.captain + "<br>");
+			document.write("vice_captain : " + pirates.vice_captain + "<br>");
+			pirates.dancer = "seungje";
+			document.write("dancer : " + pirates.dancer + "<br>");
+			pirates["team doctor"] = "jeongwoo";
+			document.write("team doctor : " + pirates["team doctor"] + "<br>");
+		</script>
+		<h2>Iterate</h2>
+		<script>
+			for (var key in pirates) {
+				document.write(key + ' : ' + pirates[key] + '<br>');
+			}
+		</script>
+		<h2>Property & Methods</h2>
+		<script>
+			pirates.showAll = function() { // function showAll()로 정의하는 것과 같은 효과
+			// showAll 역시 pirates 객체에 소속되어있으므로 함수 자체도 출력됨
+				for (var key in pirates) {
+					document.write(key + ' : ' + this[key] + '<br>');
+				}
+			}
+			pirates.showAll();
+		</script>
+	</body>
+</html>

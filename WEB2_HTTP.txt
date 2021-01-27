@@ -1,0 +1,33 @@
+// 2020.07.19
+웹을 구성하는 최초의 4가지 요소 : HTML, URL, Web browser/server, HTTP
+
+HTTP (HyperText Transfer Protocol)
+HTML, CSS, JavaScript, 이미지 등을 주고받기 위한 공통의 메세지
+Request, Response로 구성
+웹 브라우저에서 (요소)검사 - Network 탭에서 웹브라우저와 웹서버의 통신 기록 접근 가능
+Network - Headers에 Request, Response 내용 존재
+
+Request Headers
+첫번째 줄 : Request Line
+ - GET : 특정 html 파일을 가져옴
+두번째 줄부터 빈 줄까지 : Request Headers
+ - Host : 요청하는 웹서버의 주소
+ - 가상 호스트 / 포트
+ - User-Agent : 운영체제 / 웹브라우저 정보
+ - Accept-Encoding : 특정 웹브라우저가 처리할 수 있는 압축 방식
+ - If-Modified-Since : 가지고 있는 파일에 대한 기록. 웹서버와 비교해 갱신 실행
+ Request Message Header : Requeset Line + Requeset Headers
+ 빈 줄 아래 : Request Message Body : 웹서버로 전송할 메세지
+ 
+ Response Headers
+ Status : version / status codes / phrase
+ Headers : Content-Type, Content-Length, Content-Encoding, Last-Modified
+ 한 줄 띄우고 Response 탭의 html 코드 전송
+ 
+ 더 공부해볼만한 분야
+ HTTPS, SSL : 웹사이트 보안
+ Cache : 이미 다운로드된 파일을 통해 성능 향상
+  - cache-control, pragma
+ Cookie : 개인화, 정보 저장 -> Web Storage
+ Proxy : 웹브라우저와 웹서버 사이의 중개서버
+ 네트워크 모니터 도구 : Developer tools - Network / Wireshark

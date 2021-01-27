@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Loop & Array</h1>
+		<script>
+			var pirates = ['honggi', 'seungjae', 'jaeho', 'byungjoon', 'jeongwoo', 'gwonhee', 'seungje', 'ikhyeon', 'gyungmin'];
+		</script>
+		<h2>Pirates</h2>
+		<ul>
+			<script>
+				var i = 0;				
+				while(i < pirates.length) {
+					document.write('<li><a href="http://a.com/'+pirates[i]+'">'+pirates[i]+'</a></li>');
+					i++;
+				}
+			</script>
+		</ul>
+	</body>
+</html>

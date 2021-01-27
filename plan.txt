@@ -1,0 +1,17 @@
+WEB Programming Study Plan
+Update : 2021.01.27
+
+1. WEB1 - HTML : FINISHED
+2. WEB2 - JavaScript : FINISHED
+3. WEB2 - CSS : FINISHED
+4. WEB2 - Domain Name System : FINISHED
+5. WEB2 - HTTP : FINISHED
+6. WEB2 - Node.js : FINISHED
+
+What's Next?
+ - WEB2 - Python
+ - WEB2 - PHP
+ - WEB3 - Ajax (Web2 JavaScript에서 이어지는 내용)
+ - WEB3 - React
+ - GITn
+ - AWS

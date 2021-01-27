@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title></title>
+		<style>
+			#grid {
+				border : 5px solid pink;
+				display : grid;
+				grid-template-columns : 150px 1fr;
+				/* fr : 화면을 쓰는 조정 단위. 2 : 1일 경우 전체 화면을 2 : 1로 사용 */
+			}
+			div{
+				border : 5px solid gray;
+		</style>
+	</head>
+	<body>
+		<div id = "grid">
+			<!-- div는 block level element, span은 inline level element -->
+			<div>NAVIGATION</div>
+			<div>ARTICLE</div>
+		</div>
+		
+	</body>
+</html>

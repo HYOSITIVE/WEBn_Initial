@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.js{
+				font-weight:bold;
+				color:red;
+			}
+			#first{
+				color:green;
+			}
+			span{
+				color:blue;
+			}
+		</style>
+		<!--
+		<style> 태그는 <style>로 감싸진 텍스트가 CSS라는 것을 알려주는 구분자
+		js{}일 경우, 태그의 이름이 js인 태그를 가리킴
+		.js{}일 경우, class값이 js인 태그를 가리킴
+		#first는 id값이 first인 태그를 가리킴
+		id는 식별하는 것, class는 그룹핑하는 것. class 선택자가 더 포괄적, id 선택자가 더 정확하게 타겟팅.
+		주로 class로 전체적으로 디자인하고, id를 통해 예외처리
+		우선 순위 : id 선택자 - class 선택자 - 태그 전체
+		--> 
+	</head>
+	<body>
+		<h1> <a href="index.html"> WEB</a></h1>
+		<h2 style="background-color:coral; color=powderblue">CSS</h2>
+		<!--
+		태그의 style 속성 안에는 CSS가 온다.
+		CSS 문법에서 A:B와 같은 코드는 속성(property)라고 한다.
+		-->
+		<p>
+			<span id="first" class="js">CSS</span> is for designing website. <span class="js">CSS</span> works with <span>HTML</span> and <span>JavaScript</span>.
+			
+			<!-- 개별적으로 style 적용 시
+			span style="font-weight:bold">CSS</span> is for designing website. <span style="font-weight:bold">CSS</span> works with HTML and JavaScript.
+			-->
+			
+			<!--
+			<div> 태그는 어떠한 의미도 기능도 없다. 어떤 정보를 제어하고 싶을 때 그것을 감싸주는 역할 수행. 다만 줄바꿈이 시행된다.
+			<span> 태그는 <div> 태그와 같은 용도. 다만 페이지의 전체를 쓰지 않는다. 즉, 줄바꿈이 시행되지 않는다.
+			-->
+		</p>
+	</body>
+</html>
